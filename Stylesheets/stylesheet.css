@@ -1,35 +1,48 @@
 ﻿body {
 }
 
-h1{
+h1 {
     font-size: 2.5rem;
 }
-header{
+
+header {
     padding-top: .2rem;
     background-color: rgb(55, 111, 35);
     height: 8rem;
 }
 
-footer{
+footer {
     background-color: rgb(205, 194, 86);
 }
 
-nav{
+nav {
     background-color: darkgrey;
     padding-top: 5px;
     height: 1.5rem;
     vertical-align: central;
 }
 
-.headerlogo{
+.headerlogo {
     float: right;
     margin-top: .1rem;
     padding-right: .3rem;
 }
 
-#logo{
+#logo {
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
     background-color: rgb(55, 111, 35);
+}
+
+.mapouter {
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+}
+
+.gmap_canvas {
+    background: none !important;
+    height: 300px;
+    width: 300px;
 }
