@@ -2,16 +2,19 @@
 }
 
 h1 {
-    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    font-size: 3rem;
 }
 
 header {
     padding-top: .2rem;
     background-color: rgb(55, 111, 35);
-    height: 8rem;
+    height: 15rem;
 }
 
 footer {
+    
     background-color: rgb(205, 194, 86);
 }
 
@@ -24,8 +27,8 @@ nav {
 
 .headerlogo {
     float: right;
-    margin-top: .1rem;
-    padding-right: .3rem;
+    padding-top: -1rem;
+    padding-right: 1rem;
 }
 
 #logo {
@@ -36,6 +39,7 @@ nav {
 }
 
 .mapouter {
+    float: right;
     overflow: hidden;
     height: 300px;
     width: 300px;
@@ -45,4 +49,20 @@ nav {
     background: none !important;
     height: 300px;
     width: 300px;
+}
+
+.mapouter_big {
+    overflow: hidden;
+    height: 500px;
+    width: 700px;
+}
+
+.gmap_canvas_big {
+    background: none !important;
+    height: 500px;
+    width: 700px;
+}
+
+.mainclass{
+    padding-left: .5rem;
 }
