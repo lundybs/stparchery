@@ -4,6 +4,7 @@
     <title>STP Archery Main Page</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -16,7 +17,7 @@
 <body>
     <main class="container-fluid">
         <header class="row">
-            <h1 class="col-md-4">STP Archery</h1>
+            <h1 class="col-md-8">Sraight To The Point Archery</h1>
             <aside class="col-md-2 headerlogo">
                 <img id="logo" src="Resources/logo.jpg" alt="Company arrow logo" />
             </aside>
@@ -25,23 +26,45 @@
         <nav class="row">
             <ul class="nav nav-pills">
                 <li role="presentation" class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                <li role="presentation" class="active"><a href="classes.html"><i class="fa fa-bars" aria-hidden="true"></i> Classes and Lessons</a></lirole="presentation">
+                <li role="presentation" class="active"><a href="classes.html"><i class="fa fa-bars" aria-hidden="true"></i> Classes and Lessons</a></li>
                 <li role="presentation" class="active"><a href="instructor.html"><i class="fa fa-users" aria-hidden="true"></i> Instructors</a></li>
                 <li role="presentation" class="active"><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</a></li>
             </ul>
         </nav>
+
         <div class="row">
             <div class="col-md-10">
                 <img class="mainpics" src="Resources/students-competing.jpg" alt="Local team archery competition" />
-                <img class="mainpics" src="Resources/class1.jpg" alt="" /><br />
+                <img class="mainpics" src="Resources/class1.jpg" alt="Students lined up to shoot arrows" /><br />
+
                 <h4>Hours</h4>
-                Monday:  3pm - 8pm<br /> Tuesday:  3pm - 8pm<br />  Wednesday:  3pm - 8pm<br />  Thursday:  3pm - 8pm<br />
-                Friday:  3pm - 8pm<br /> Saturday:  8am - 8pm<br /> Sunday:  8am - 8pm<br />
+                <p>
+                    Monday:  3pm - 8pm<br /> Tuesday:  3pm - 8pm<br />  Wednesday:  3pm - 8pm<br />  Thursday:  3pm - 8pm<br />
+                    Friday:  3pm - 8pm<br /> Saturday:  8am - 8pm<br /> Sunday:  8am - 8pm<br />
+                </p>
+                <p>
+                    Giap Nguyen started Straight to the Point Archery in 2005. He's an avid and accomplished archer, having competed with the United States Archery
+                    Team in the 2000 Summer Olympics. He has three children, and started Straight to the Point in part because he was not satisfied
+                    with the archery eduction options for them in Tacoma. After The Hunger Games books and movies
+                    came out, he noticed a surge in popularity of archery among young people, especially young women,
+                    and the business has been booming ever since.
+                </p>
+                <h4> Nondiscriminatory Policy:</h4>
+                <p>
+                    Next Step Archery admits students of any race, gender presentation, sexuality, religion,
+                    national origin or ethnic origin to all rights, privileges, programs and activities
+                    available to students at the school. We do not discriminate in administration of our
+                    educational policies, admission policies and other school administered programs. All
+                    students are welcome and valuable members of our community.
+                </p>
             </div>
-            <div class="mapouter col-md-2">
-                <div class="gmap_canvas">
-                    <iframe width="200" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=98412, &t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                </div>
+            <div class="col-md-2">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDqIAvHMUvrNyEtT_t-YstIu8rHiwkbTSk '></script>
+                <div style='overflow:hidden;height:300px;width:300px;'>
+                    <div id='gmap_canvas' style='height:250px;width:250px;'></div>
+                </div> <a href='https://add-map.com/'>https://www.Add-Map.com</a>
+                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=6386fa2ba39434bfbfbde946248a40d2f976448f'></script>
+                <script type='text/javascript'>function init_map() { var myOptions = { zoom: 12, center: new google.maps.LatLng(47.2528768, -122.44429059999999), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(47.2528768, -122.44429059999999) }); infowindow = new google.maps.InfoWindow({ content: '<strong>STP Archery</strong><br><br>98412 Tacoma<br>' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
             </div>
         </div>
 
@@ -60,13 +83,10 @@
                 <a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
             </p>
             <p class="col-md-1">
-                
             </p>
             <p class="col-md-2">
-               
             </p>
         </footer>
-
     </main>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
